@@ -67,7 +67,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.2px;
 }
 
-/* Teks penjelasan panjang rata kiri-kanan (justify) */
 p, li { text-align: justify; }
 .hero p, .section-title p, .call-to-action p { text-align: justify; text-align-last: center; }
 .info-item p, .stats-item p, .footer .footer-contact p, .copyright p { text-align: left; }
@@ -360,8 +359,10 @@ section, .section {
 .services .service-item h4 { font-weight: 700; margin-bottom: 15px; font-size: 20px; color: var(--heading-color); transition: 0.3s; }
 .services .service-item p { line-height: 24px; font-size: 14px; margin-bottom: 0; color: #4a5368; text-align: justify; transition: 0.3s; }
 .services .service-item:hover h4,
-.services .service-item:hover .icon i { color: #d4af37; }
-.services .service-item:hover p { color: #ffffff; }
+.services .service-item:hover h4 a,
+.services .service-item:hover .icon i,
+.services .service-item:hover i { color: #d4af37 !important; }
+.services .service-item:hover p { color: #ffffff !important; }
 .services .service-item:hover:before { inset: 0; }
 
 .stats .stats-item { padding: 30px; width: 100%; }
@@ -469,7 +470,6 @@ section, .section {
   box-shadow: 0 4px 25px rgba(10, 31, 68, 0.12);
 }
 
-/* Tombol Kirim via WhatsApp: putih saat normal, navy saat kursor diarahkan */
 #wa-form .btn-wa {
   background-color: #ffffff !important;
   color: #0a1f44 !important;
